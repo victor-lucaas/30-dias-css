@@ -4,7 +4,7 @@ Este repositorio e o meu compromisso de praticar CSS todos os dias durante 30 di
 
 A ideia e simples: todo dia eu vou pegar um desafio, estudar como ele funciona, mexer no codigo, deixar com a minha cara e postar no GitHub. Cada projeto vai ter HTML, CSS e uma pequena explicacao do que eu fiz e do que aprendi.
 
-Tambem quero usar esse projeto para evoluir de verdade. Minha meta e estudar cada desafio, entender o codigo, testar alteracoes e conseguir explicar com minhas proprias palavras o que eu fiz em cada dia.
+Tambem quero usar esse projeto para evoluir de verdade. No comeco posso pesquisar, pedir ajuda e usar IA para entender melhor, mas minha meta e depender cada vez menos disso, escrever mais codigo sozinho e conseguir explicar o que eu fiz com minhas proprias palavras.
 
 ## O que eu quero fazer
 
@@ -13,7 +13,7 @@ Tambem quero usar esse projeto para evoluir de verdade. Minha meta e estudar cad
 - Aprender efeitos, animacoes, hover, transicoes e responsividade.
 - Criar o habito de postar meu progresso no GitHub.
 - Transformar cada desafio em algo mais pessoal, sem apenas copiar o codigo original.
-- Aprender a resolver mais coisas sozinho com pratica e constancia.
+- Usar menos IA com o tempo e aprender a resolver mais coisas sozinho.
 - Criar um registro real da minha evolucao como dev.
 
 ## Como vou postar
@@ -43,8 +43,8 @@ git push
 | Dia | Projeto | Status |
 | --- | --- | --- |
 | 01 | Icones sociais em camadas | Feito |
-| 02 | Loader animado | Feito |
-| 03 | Texto mudando de cor | A fazer |
+| 02 | Loader animado | A fazer |
+| 03 | Texto mudando de cor | Feito |
 | 04 | Botao com efeito | A fazer |
 | 05 | Efeito pulsar | A fazer |
 | 06 | Texto com efeito lightning | A fazer |
@@ -99,37 +99,30 @@ O que pratiquei:
 - `hover`
 - organizacao de HTML e CSS
 
-## Dia 02
+## Dia 03
 
-No segundo dia eu fiz um loader animado em formato de progresso circular. A ideia foi mostrar uma porcentagem subindo de `0%` ate `100%`, com um arco acompanhando esse carregamento.
+No terceiro dia eu trabalhei com um texto grande em movimento que muda de cor quando passa por uma area diferente da tela. Mantive a ideia principal do efeito original, mas deixei a pagina mais organizada e com uma identidade visual propria.
 
-O que eu fiz no Dia 02:
+O que eu fiz no Dia 03:
 
-- Corrigi as informacoes principais do HTML.
-- Centralizei o conteudo na tela.
-- Usei um fundo escuro para destacar o loader.
-- Coloquei a porcentagem no centro do circulo.
-- Criei o arco circular com `conic-gradient`.
-- Usei `mask` para deixar o progresso com formato de anel.
-- Adicionei um brilho suave no arco.
-- Fiz o arco girar continuamente.
-- Usei JavaScript para atualizar o numero de `0%` ate `100%`.
+- Reescrevi o HTML com uma estrutura mais clara.
+- Criei uma apresentacao simples para identificar o desafio.
+- Mantive duas camadas do mesmo texto para criar a troca de cor.
+- Troquei as cores antigas por uma paleta mais moderna.
+- Adicionei borda, sombra e um painel colorido para destacar o efeito.
+- Usei `clamp()` para melhorar o tamanho do texto em telas diferentes.
+- Adicionei responsividade para o desafio funcionar melhor no celular.
 
 O que pratiquei:
 
-- `display: grid`
-- `place-items`
-- `conic-gradient`
-- `mask`
-- `filter`
-- `border-radius`
+- `position`
+- `overflow`
 - `animation`
 - `@keyframes`
-- `rotate`
-- variaveis CSS
-- JavaScript basico
+- `transform`
+- `clamp`
 - responsividade
 
 ## Observacao
 
-Este desafio foi inspirado em referencias de projetos CSS. A partir daqui, minha meta e estudar cada parte, alterar o codigo, escrever o que aprendi e construir meu proprio caminho durante os 30 dias.
+Este desafio foi inspirado em um projeto encontrado no GitHub. A partir daqui, minha meta e estudar cada parte, alterar o codigo, escrever o que aprendi e construir meu proprio caminho durante os 30 dias.
