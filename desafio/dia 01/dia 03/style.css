@@ -1,0 +1,217 @@
+:root {
+    --ink: #11131b;
+    --paper: #fff7df;
+    --red: #ff4d5a;
+    --yellow: #ffd166;
+    --cyan: #35d0ba;
+    --violet: #7c5cff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--paper);
+    background:
+        radial-gradient(circle at 15% 18%, rgba(53, 208, 186, 0.32), transparent 28%),
+        radial-gradient(circle at 86% 12%, rgba(255, 77, 90, 0.34), transparent 30%),
+        radial-gradient(circle at 76% 86%, rgba(124, 92, 255, 0.3), transparent 28%),
+        linear-gradient(135deg, #11131b 0%, #172033 46%, #102b32 100%);
+}
+
+.challenge {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    gap: 38px;
+    overflow: hidden;
+    padding: 46px 24px;
+}
+
+.challenge::before {
+    position: absolute;
+    inset: 0;
+    content: "";
+    background:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+        linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+    background-size: 44px 44px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent 78%);
+}
+
+.challenge::after {
+    position: absolute;
+    inset: auto -12vw -28vw auto;
+    width: 58vw;
+    height: 58vw;
+    content: "";
+    border: 34px solid rgba(255, 209, 102, 0.22);
+    border-radius: 50%;
+}
+
+.intro {
+    position: relative;
+    z-index: 2;
+    width: min(100%, 1060px);
+    margin: 0 auto;
+}
+
+.intro p {
+    width: fit-content;
+    margin: 0 0 14px;
+    padding: 8px 14px;
+    border: 1px solid rgba(255, 247, 223, 0.34);
+    border-radius: 999px;
+    color: var(--ink);
+    background: var(--yellow);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.24);
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.intro h1 {
+    max-width: 900px;
+    margin: 0;
+    color: var(--paper);
+    font-size: clamp(2.6rem, 7vw, 6.4rem);
+    font-weight: 900;
+    line-height: 0.94;
+    text-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+}
+
+.stage {
+    position: relative;
+    z-index: 2;
+    width: min(100%, 1060px);
+    height: clamp(210px, 28vw, 320px);
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid rgba(255, 247, 223, 0.5);
+    border-radius: 28px;
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 209, 102, 0.32)),
+        var(--paper);
+    box-shadow:
+        0 26px 80px rgba(0, 0, 0, 0.34),
+        inset 0 0 0 8px rgba(255, 255, 255, 0.34);
+    color: var(--ink);
+    isolation: isolate;
+}
+
+.stage::before,
+.stage::after {
+    position: absolute;
+    z-index: 3;
+    content: "";
+    pointer-events: none;
+}
+
+.stage::before {
+    inset: 18px;
+    border: 1px solid rgba(17, 19, 27, 0.12);
+    border-radius: 18px;
+}
+
+.stage::after {
+    top: 0;
+    bottom: 0;
+    left: calc(56% - 1px);
+    width: 2px;
+    background: rgba(255, 247, 223, 0.7);
+    box-shadow: 0 0 24px rgba(255, 247, 223, 0.55);
+}
+
+.color-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 56%;
+    height: 100%;
+    overflow: hidden;
+    color: var(--paper);
+    background:
+        radial-gradient(circle at 22% 28%, rgba(255, 209, 102, 0.42), transparent 34%),
+        linear-gradient(135deg, rgba(124, 92, 255, 0.42), transparent 55%),
+        var(--red);
+}
+
+.color-panel::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    background:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.14) 1px, transparent 1px),
+        linear-gradient(rgba(255, 255, 255, 0.14) 1px, transparent 1px);
+    background-size: 24px 24px;
+    opacity: 0.36;
+}
+
+.track {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: flex;
+    width: max-content;
+    padding-left: 42px;
+    white-space: nowrap;
+    font-size: clamp(3rem, 8.5vw, 8rem);
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    transform: translateY(-50%);
+    animation: slide-text 24s linear infinite;
+}
+
+.track span {
+    padding-right: 0.75em;
+}
+
+@keyframes slide-text {
+    from {
+        transform: translate(0, -50%);
+    }
+
+    to {
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 700px) {
+    .challenge {
+        gap: 28px;
+        padding: 28px 18px 40px;
+    }
+
+    .intro h1 {
+        font-size: clamp(2.4rem, 14vw, 4.2rem);
+    }
+
+    .stage {
+        height: 220px;
+        box-shadow:
+            0 20px 56px rgba(0, 0, 0, 0.34),
+            inset 0 0 0 6px rgba(255, 255, 255, 0.28);
+    }
+
+    .stage::after {
+        left: calc(63% - 1px);
+    }
+
+    .color-panel {
+        width: 63%;
+    }
+
+    .track {
+        padding-left: 20px;
+        font-size: clamp(3.4rem, 20vw, 6rem);
+    }
+}
