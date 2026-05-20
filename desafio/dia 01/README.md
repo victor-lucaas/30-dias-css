@@ -45,7 +45,7 @@ git push
 | 01 | Icones sociais em camadas | Feito |
 | 02 | Loader animado | A fazer |
 | 03 | Texto mudando de cor | Feito |
-| 04 | Botao com efeito | A fazer |
+| 04 | Botao com efeito | Feito |
 | 05 | Efeito pulsar | A fazer |
 | 06 | Texto com efeito lightning | A fazer |
 | 07 | Preloader animado | A fazer |
@@ -84,7 +84,7 @@ O que eu fiz no Dia 01:
 - Troquei o Google Plus por GitHub.
 - Removi os textos extras da tela para deixar o visual mais limpo.
 - Coloquei links reais nos icones: Facebook, Twitter, GitHub, LinkedIn e Instagram.
-- Criei um fundo mais bonito com degradê escuro, brilho colorido, grade suave e painel translúcido.
+- Criei um fundo mais bonito com degradÃª escuro, brilho colorido, grade suave e painel translÃºcido.
 - Melhorei cores, espacamentos, bordas e sombras.
 - Ajustei o hover para as camadas subirem com mais suavidade.
 - Adicionei responsividade para funcionar melhor em telas menores.
@@ -123,6 +123,35 @@ O que pratiquei:
 - `clamp`
 - responsividade
 
+## Dia 04
+
+No quarto dia eu trabalhei com um botao com efeito de hover nas bordas. Mantive a ideia dos pseudo-elementos deslizando, mas deixei a composicao mais profissional, com painel de demonstracao, contraste melhor e detalhes visuais mais bem acabados.
+
+O que eu fiz no Dia 04:
+
+- Reescrevi a apresentacao para ficar mais limpa e direta.
+- Criei um painel de preview com cabecalho, linhas internas e acabamento de vidro escuro.
+- Mantive o efeito principal do botao usando `::before` e `::after`.
+- Melhorei o hover com mudanca de cor, sombra, movimento e fundo iluminado.
+- Adicionei aneis animados ao redor do botao para valorizar a demonstracao.
+- Mantive o estado de foco para o botao ficar melhor no teclado.
+- Ajustei espacamentos, contraste, bordas e hierarquia visual.
+- Adicionei responsividade para funcionar melhor no celular.
+
+O que pratiquei:
+
+- `::before`
+- `::after`
+- `hover`
+- `focus-visible`
+- `transition`
+- `transform`
+- `box-shadow`
+- responsividade
+
 ## Observacao
 
 Este desafio foi inspirado em um projeto encontrado no GitHub. A partir daqui, minha meta e estudar cada parte, alterar o codigo, escrever o que aprendi e construir meu proprio caminho durante os 30 dias.
+
+
+
