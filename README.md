@@ -101,5 +101,3 @@ O que pratiquei:
 
 ## Observacao
 
-Este desafio foi inspirado em um projeto encontrado no GitHub. A partir daqui, minha meta e estudar cada parte, alterar o codigo, escrever o que aprendi e construir meu proprio caminho durante os 30 dias.
-desafio desafio desafio desafio desafio desafio desafio desafio desafio 
